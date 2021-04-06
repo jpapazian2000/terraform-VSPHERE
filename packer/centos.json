@@ -64,8 +64,8 @@
     "vsphere-folder": "linux-template",
     "vsphere-network": "EXTERNAL",
     "vsphere-password": "{{env `VCENTER_PASSWORD`}}",
-    "vsphere-server": "vcsa.my-v-world.fr",
-    "vsphere-user": "jpapazian@vsphere.local"
+    "vsphere-server": "{{env `VCENTER_SERVER`}}",
+    "vsphere-user": "{{env `VCENTER_USER`}}"
   }
 }
 
