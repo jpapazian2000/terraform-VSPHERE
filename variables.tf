@@ -111,13 +111,3 @@ variable "tag" {
   description = "Used to name a tag on vCenter"
   default     = ""
 }
-
-variable "cpu_number" {
-  description = "number of CPU (core per CPU) for the VM"
-  default     = 2
-}
-
-variable "ram_size" {
-  description = "VM RAM size in megabytes"
-  default     = 4096
-}
