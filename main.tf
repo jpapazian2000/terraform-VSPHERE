@@ -16,4 +16,6 @@ module "vmware_linux_vm" {
   tag_category      = var.tag_category
   tag               = var.tag
   storage_policy_name = var.storage_policy_name
+  cpu_number        = var.cpu_number
+  ram_size          = var.ram_size
 }
