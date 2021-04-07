@@ -13,7 +13,7 @@ module "vmware_linux_vm" {
   ipv4submask       = "24"
   vmgateway         = "192.168.0.1"
   vmdns             = ["192.168.0.1"]
-  tag_category      = "web2"
-  tag               = "web2"
+  tag_category      = "web3"
+  tag               = "web3"
   storage_policy_name = var.storage_policy_name
 }
