@@ -11,4 +11,5 @@ variable vsphere_server {
 }
 variable storage_policy_name {
     type = string
+    default = "vSAN Default Storage Policy"
 }
