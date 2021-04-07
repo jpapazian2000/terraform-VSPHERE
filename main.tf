@@ -1,6 +1,6 @@
 module "vmware_linux_vm" {
   source            = "github.com/nehrman/terraform-vmware-linux"
-  vmtemp            = "CentOS7-Template"
+  vmtemp            = "linuxVM"
   instances         = "1"
   vmname            = "linux-vm"
   vmrp              = "jeromeRP"
@@ -13,6 +13,7 @@ module "vmware_linux_vm" {
   ipv4submask       = "24"
   vmgateway         = "192.168.0.1"
   vmdns             = ["192.168.0.1"]
-  tag_category      = "web"
-  tag               = "web"
+  tag_category      = "web2"
+  tag               = "web2"
+  storage_policy_name = var.storage_policy_name
 }

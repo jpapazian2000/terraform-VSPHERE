@@ -9,3 +9,6 @@ variable vsphere_server {
     type = string
     default = "vcsa.my-v-world.fr"
 }
+variable sstorage_policy_name {
+    type = string
+}
