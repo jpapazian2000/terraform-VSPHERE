@@ -1,6 +1,6 @@
 module "vmware_linux_vm" {
   source            = "github.com/nehrman/terraform-vmware-linux"
-  vmtemp            = "linuxVM"
+  vmtemp            = "CentOS-Template"
   instances         = "1"
   vmname            = "linux-vm"
   vmrp              = "jeromeRP"
