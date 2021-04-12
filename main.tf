@@ -1,5 +1,5 @@
 module "vmware_linux_vm" {
-  source            = "github.com/nehrman/terraform-vmware-linux"
+  source            = "github.com/jpapazian2000/terraform-vmware-linux"
   vmtemp            = var.vmtemp
   instances         = var.instances
   vmname            = var.vmname
