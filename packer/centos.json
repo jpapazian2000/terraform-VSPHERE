@@ -15,7 +15,7 @@
       "convert_to_template": true,
       "datacenter": "{{user `vsphere-datacenter`}}",
       "datastore": "{{user `vsphere-datastore`}}",
-      "folder": "{{user `vsphere-folder`}}"
+      "folder": "{{user `vsphere-folder`}}",
       "disk_controller_type": "pvscsi",
       "guest_os_type": "centos7_64Guest",
       "insecure_connection": "true",
@@ -47,9 +47,22 @@
   "provisioners": [
     {
       "inline": [
-        "sudo yum install -y cloud-init"
+        "sudo yum install -y cloud-init cloud-utils-growpart python-pip"
       ],
       "type": "shell"
+    },
+    {
+      "type": "shell",
+      "inline": [
+        "curl -sSL https://raw.githubusercontent.com/vmware/cloud-init-vmware-guestinfo/master/install.sh | sudo sh -"
+      ]
+    },
+
+    {
+      "type": "shell",
+      "inline": [
+        "sudo cloud-init clean"
+      ]
     }
   ],
   "variables": {
